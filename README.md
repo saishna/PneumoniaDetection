@@ -1,2 +1,0 @@
-# PneumoniaDetection
-AI Mini Project
