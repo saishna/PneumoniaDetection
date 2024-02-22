@@ -23,7 +23,7 @@ def main():
 
     if uploaded_file is not None:
         st.image(uploaded_file, caption='Uploaded Image.', use_column_width=True)
-        model = load_model('pneumonia.h5')
+        model = load_model('pneumoniaDetect.h5')
         img = image.load_img(uploaded_file, target_size=(224, 224))
         x = image.img_to_array(img)
         x = np.expand_dims(x, axis=0)
